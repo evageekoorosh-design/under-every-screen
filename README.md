@@ -4,7 +4,7 @@
 2. On the repository page choose Add file, then Upload files. Open this folder on your computer and drag in everything inside it: `index.html`, `sources.html`, `corrections.html`, `style.css`, `favicon.svg`, the five script files (`app.js`, `backpack.js`, `kolwezi.js`, `nav.js`), and the `data`, `images` and `vendor` folders. Do NOT upload a folder called `review` (it exists only in the copy made for review). Click Commit changes.
 3. Go to Settings, then Pages. Under Build and deployment, set Source to Deploy from a branch, pick `main` and `/ (root)`, and Save.
 4. Wait a minute or two. Your site appears at `https://YOUR-USERNAME.github.io/under-every-screen/`.
-5. Add the two link-preview lines described at the bottom of this file, using your real address, and commit that change.
+5. The link-preview address is already set for the repository `evageekoorosh-design/under-every-screen`.
 6. Optional: buy a domain, then add it under Settings, Pages, Custom domain, and follow GitHub's DNS instructions.
 
 To preview on your computer first, open a terminal in this folder and run `python3 -m http.server`, then visit http://localhost:8000.
@@ -24,13 +24,6 @@ Tips:
 - The study's own figures are open access under CC BY 3.0 and may be reused with a citation (Brown, Boyd and Kara, Sustainability 2022).
 - Edit the credit lines near the top of `kolwezi.js` so each frame's credit matches its source.
 
-## After you know your site address
+## Link previews
 
-Link previews (when someone pastes the site into a message or social post) need a full web address for the preview picture, so add these two lines inside `<head>` in `index.html` once GitHub Pages gives you your address (replace the address with yours):
-
-```html
-<meta property="og:image" content="https://YOUR-NAME.github.io/YOUR-REPO/images/share.png">
-<meta property="og:url" content="https://YOUR-NAME.github.io/YOUR-REPO/">
-```
-
-The picture itself is `images/share.png` (1200 by 630). `favicon.svg` is the small icon in the browser tab.
+The link-preview tags in `index.html` already point to `https://evageekoorosh-design.github.io/under-every-screen/`. If you rename the repository, change your username, or add your own domain, update the two `og:` lines in the `<head>` of `index.html` to the new address. The preview picture is `images/share.png` (1200 by 630). `favicon.svg` is the small icon in the browser tab.
