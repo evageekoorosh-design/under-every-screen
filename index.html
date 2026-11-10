@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Under Every Screen</title>
+<meta name="description" content="What powers the things we hold: the minerals behind phones, electric cars and AI data centers, and the people who dig them.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><meta property="og:type" content="website"><meta property="og:site_name" content="Under Every Screen"><meta property="og:title" content="Under Every Screen"><meta property="og:description" content="What powers the things we hold: the minerals behind phones, electric cars and AI data centers, and the people who dig them."><meta name="twitter:card" content="summary_large_image"><link rel="stylesheet" href="style.css"></head>
+<body>
+<header id="bar"><a class="brand" href="#top">Under Every Screen</a><span class="here" id="here" aria-live="off">Start</span>
+<button type="button" id="menu-btn" aria-expanded="false" aria-controls="menu">Sections</button><div id="progress" aria-hidden="true"></div>
+<ul id="menu" hidden>
+<li><a href="#engines">Three drivers</a></li><li><a href="#backpack">Phone backpack</a></li><li><a href="#cobalt">Cobalt map</a></li><li><a href="#copperbelt">Copperbelt</a></li><li><a href="#kolwezi-land">Kolwezi from above</a></li><li><a href="#kivus">The Kivus</a></li><li><a href="#people">The people</a></li><li><a href="#act">What you can do</a></li><li><a href="#method">How we check facts</a></li><li><a href="sources.html">Sources</a></li>
+</ul></header>
+<div id="map" aria-hidden="true"></div>
+
+<section class="scrim" data-cam="world" id="top"><div class="panel">
+<h1>Under Every Screen</h1>
+<p class="tag">What powers the things we hold.</p>
+<p>Phones, electric cars and AI data centers all run on metals dug from the ground. A large share of the world's cobalt, and some of its coltan, comes from the Democratic Republic of Congo, where the people doing the digging carry the risks. This site shows what the evidence says, and what we can do about it.</p>
+<p>This isn't about guilt. It's about seeing clearly. Where any of us lives is largely an accident of birth. The earth is shared, and so is responsibility for how we use it.</p>
+<p class="fine">Scroll to begin.</p></div></section>
+
+<section class="solid" id="engines"><div class="wide">
+<h2>Three things drive demand for these minerals</h2>
+<div class="cols">
+<div><h3>Devices</h3><p>Fast to replace, small in each unit, enormous in number: about 1.26 billion phones shipped worldwide in 2025, according to IDC.</p>
+<p><a href="#backpack">Open your phone's backpack</a></p></div>
+<div><h3>Vehicles</h3><p>A 2021 IEA analysis found that a typical electric car needs about six times the mineral inputs of a conventional car. Batteries are changing: cobalt-free iron-phosphate batteries already hold a significant share of the market in China.</p><p class="fine">Sources: IEA (2021); USGS (2026).</p></div>
+<div><h3>Data centers</h3><p>In 2024 data centers used about 415 TWh of electricity, around 1.5% of the world's total. In 2025 it was about 485 TWh, after 17% growth in one year. The IEA expects roughly 950 TWh by 2030.</p>
+<svg class="chart" viewBox="0 0 300 130" role="img" aria-label="Data center electricity use: 415 TWh in 2024, 485 in 2025, about 950 projected for 2030">
+<polyline points="30,68 60,61" fill="none" stroke="#4a86ff" stroke-width="3"/>
+<polyline points="60,61 270,15" fill="none" stroke="#4a86ff" stroke-width="3" stroke-dasharray="6 5"/>
+<g fill="#efe9dc" font-size="11" font-family="system-ui"><circle cx="30" cy="68" r="4" fill="#4a86ff"/><circle cx="60" cy="61" r="4" fill="#4a86ff"/><circle cx="270" cy="15" r="4" fill="#e08a4b"/>
+<text x="12" y="92">415 (2024)</text><text x="52" y="46">485 (2025)</text><text x="168" y="12">about 950 (2030, IEA projection)</text></g></svg>
+<p>A simple text question uses less electricity than running a television for the same time. Video, reasoning and agent tasks can use hundreds or thousands of times more per query. Individual choices are small; the build-out is large.</p><p class="fine">Source: IEA, Key Questions on Energy and AI (2026).</p></div>
+</div></div></section>
+
+<section class="solid" id="backpack"><div class="wide" style="max-width:46rem">
+<h2>Your phone's backpack</h2>
+<p>A phone weighs a couple of hundred grams; Google lists 183 grams for the Pixel 10a. Behind it sits everything that went into making it, and makers publish only part of that. Start with a phone you might own, then go layer by layer.</p>
+<div class="zoom pick" id="phonepick" role="group" aria-label="Pick a phone"><button type="button" data-p="ip" aria-pressed="true">iPhone 18 Pro</button><button type="button" data-p="gs" aria-pressed="false">Galaxy S26 Ultra</button><button type="button" data-p="px" aria-pressed="false">Pixel 11 Pro</button><button type="button" data-p="fp" aria-pressed="false">Fairphone</button></div>
+<h3 id="phone-name" style="margin-top:1.2rem"></h3><dl id="card"></dl>
+<p class="fine">All figures are the companies' own. Footprints assume three years of use and each company's own method, so they are not directly comparable. "Not found" means we did not find a figure in the reports we read; <a href="sources.html#de-21">see why that matters</a>. If a company has published one, <a href="corrections.html">tell us</a>.</p>
+<details open><summary>Layer 1: What is inside</summary>
+<p>Makers' own reports list cobalt and lithium in the battery, tantalum in capacitors, gold in plating and wiring, tin in solder, copper, rare earth elements in speaker magnets, and aluminum in the casing.</p>
+<p>How much cobalt? Since June 2025, EU rules require makers to record a cobalt weight range in the technical documentation for phones sold in Europe. Google says the Pixel 10a battery holds between 10 and 20 grams. Fairphone's 2021 report lists about 10 grams in the Fairphone 3. Samsung's UK product page lists 10 grams or more for the Galaxy S26 Ultra. We haven't found a figure for the iPhone 18 Pro or the iPhone 17. The Pixel 11 Pro report does not repeat Google's range, so the Pixel 10a is our example. By our calculation from Google's numbers, the Pixel 10a holds roughly 17 grams or more.</p>
+<p>Google also gives weights for metals that are far smaller per phone: tantalum in capacitors 0.01 to 0.02 grams, gold 0.01 to 0.02 grams, neodymium 0.2 to 0.3 grams. Tiny in one phone, but multiplied by every phone sold.</p>
+<p>All three big makers describe their recent batteries as using recycled cobalt: Apple says 100% for the iPhone 18 Pro, Samsung 100% for the Galaxy S26 Ultra, and Google 100% for the Pixel 11 Pro, where it says recycled cobalt and lithium together are at least 27% of the cell's weight. Apple and Samsung say outside parties verified their recycled-content figures. These are company claims.</p>
+<p class="fine">Sources: Fairphone (2021); Apple (2025, 2026); Samsung (2026); Google (2026); EU Regulation 2023/1670. See <a href="sources.html#de-23">sources</a>.</p></details>
+<details open><summary>Layer 2: The footprint</summary>
+<p>Makers publish a lifetime carbon footprint for each model, assuming three years of use. Reported figures run from 29 kg of CO2e for Fairphone's Gen 6 to up to 95 kg for the largest iPhone 17 Pro Max.</p>
+<p>Most of it is emitted before you switch the phone on. Samsung puts the production share at 89.2% for the Galaxy S26 Ultra, Google at 85% for the Pixel 10a, and Fairphone says about 75% for its own phone. Fairphone also says that using its Fairphone 5 for five years instead of three cuts its yearly emissions by more than 28%, and Samsung and Google each promise seven years of updates for the S26 Ultra and Pixel 10a.</p>
+<p class="fine">Sources: Apple (2025, 2026); Samsung (2026); Google (2026); Fairphone (2023 to 2025). See <a href="sources.html#de-08">sources</a>.</p></details>
+<details open><summary>Layer 3: What Apple says about sourcing</summary>
+<p>Apple says that in 2024 all of the tin, tantalum, tungsten, gold, cobalt and lithium smelters and refiners it identified took part in third-party audits, and that it does not buy primary minerals directly from mines. It also says that from June 2024 it told suppliers to stop sourcing tin, tantalum, tungsten and gold from the DRC and Rwanda. That notice does not cover cobalt. Apple publishes a list of its cobalt refiners.</p>
+<p class="fine">This is Apple's own statement about its auditing, and we have not tested it independently. We have not yet checked what Samsung and Google say. Sources: Apple (2025). See <a href="sources.html#de-17">sources</a>.</p></details>
+<details open><summary>Layer 4: The people</summary>
+<p>No number can stand in for this layer. In 2018, researchers in Kolwezi found much higher cobalt levels in the blood and urine of people living beside artisanal mines, especially children. <a href="#health-study">See the evidence</a>.</p></details>
+<h3 style="margin-top:2rem">Zoom out</h3>
+<div class="zoom"><label for="n">How many phones?</label><input id="n" type="number" min="0" max="1000000000" value="30" inputmode="numeric">
+<button type="button" data-n="30">A class</button><button type="button" data-n="1000">A school</button><button type="button" data-n="1000000">A city</button></div>
+<p class="out" id="out" aria-live="polite"></p>
+<p class="fine">An illustration, not a measurement. It assumes 10 to 20 grams of cobalt per phone, from the two examples we could document (Fairphone 3 and Pixel 10a), and the lifetime footprints makers report (29 to 95 kg of CO2e per phone). Many phones will hold less.</p>
+<h3 style="margin-top:2rem">Since you opened this page</h3>
+<p class="out" id="ticker" role="timer" aria-live="off" style="font-size:2.6rem;line-height:1.1;margin:.3rem 0">0</p>
+<p id="tickerSub"></p>
+<div class="zoom pick" id="ratepick" role="group" aria-label="Choose a shipment pace"><button type="button" data-r="40" aria-pressed="true">2025 pace</button><button type="button" data-r="33" aria-pressed="false">2026 forecast pace</button></div>
+<p class="fine">An estimate: a year's shipments spread evenly across the year. IDC reports about 1.26 billion phones shipped in 2025 (about 40 a second) and forecasts just over 1 billion in 2026 (about 33 a second on average), a record fall driven by a memory-chip shortage, with the second half forecast down 27%. New phones only, not refurbished ones. The cobalt uses the 10 to 20 gram range from our two documented examples, so treat it as an illustration. Sources: IDC (2026). See <a href="sources.html#de-01">sources</a>.</p>
+<div class="todo">What we can't show yet: ore moved or water used per phone. We have no verified figures.</div>
+</div></section>
+
+<section class="scrim" data-cam="world" data-layer="prod" id="cobalt"><div class="panel">
+<h2>About three-quarters of the world's mined cobalt comes from one country.</h2>
+<p>The Democratic Republic of Congo produced an estimated 230,000 of roughly 310,000 tonnes in 2025. Indonesia was next at about 14%. Everyone else combined mined about 12%.</p>
+<p class="chip">Source: USGS Mineral Commodity Summaries 2026. Year: 2025 estimate. Confidence: high.</p></div></section>
+
+<section class="scrim" data-cam="drc" data-layer="reserves" id="reserves"><div class="panel">
+<h2>It also holds about half of the known reserves.</h2>
+<p>USGS lists 6 of 12 million tonnes of world reserves in the DRC. Reserves are what can be mined economically at today's prices. They are not a countdown to running out.</p>
+<p class="chip">Source: USGS Mineral Commodity Summaries 2026. Year: 2025. Confidence: high.</p></div></section>
+
+<section class="scrim" data-cam="drc" id="quotas"><div class="panel">
+<h2>The DRC now limits how much leaves the country.</h2>
+<p>In February 2025 it banned cobalt exports. In October it replaced the ban with quotas of up to 96,600 tonnes a year for 2026 and 2027, including 9,600 tonnes held as a national reserve. Quotas can change. USGS reports that China leads the world in refined cobalt production and use.</p>
+<p class="chip">Source: USGS Mineral Commodity Summaries 2026. Checked September 2026; re-check quarterly. Confidence: high.</p></div></section>
+
+<section class="scrim" data-cam="copper" id="copperbelt"><div class="panel">
+<h2>In the south, cobalt is found alongside copper.</h2>
+<p>Most of the world's cobalt resources sit in copper deposits in the DRC and Zambia, or in nickel deposits elsewhere, which is why copper matters to this story too. A 2018 study of residents near Kolwezi found far higher cobalt levels in the blood and urine of people living beside artisanal mines, especially children. <a href="#health-study">See the evidence</a>.</p>
+<p><a href="#kolwezi-land">See how the land around Kolwezi changed, 2009 to 2021</a>.</p>
+<p class="chip">Sources: USGS (2026); Banza Lubaba Nkulu et al., Nature Sustainability (2018). Confidence: high.</p></div></section>
+
+<section class="solid" id="kolwezi-land"><div class="wide" style="max-width:46rem">
+<h2>The land around Kolwezi, 2009 to 2021</h2>
+<p>A peer-reviewed study mapped the city of Kolwezi and the mines around it from very high resolution satellite images taken in 2009, 2014, 2019 and 2021. Choose a year.</p>
+<figure id="sat-fig" hidden style="margin:1rem 0"><img id="sat-img" alt="" style="width:100%;height:auto;border-radius:6px"><figcaption id="sat-cap" class="fine"></figcaption></figure>
+<div class="zoom pick" id="yearpick" role="group" aria-label="Choose a year"><button type="button" data-y="0" aria-pressed="true">2009</button><button type="button" data-y="1" aria-pressed="false">2014</button><button type="button" data-y="2" aria-pressed="false">2019</button><button type="button" data-y="3" aria-pressed="false">2021</button></div>
+<input type="range" id="yr" min="0" max="3" step="1" value="0" aria-label="Year" style="width:100%;margin:1rem 0;accent-color:#e08a4b">
+<p class="fine">A note on color: how green a picture looks depends heavily on the season it was taken, so a greener picture does not mean less mining. Compare the pits, ponds and bare ground instead.</p>
+<h3>Exposed rock in the study area, in square kilometers</h3>
+<div id="bars"></div>
+<p class="out" id="yrtext"></p>
+<p>Over the same years the study found about 72 square kilometers of shrubland and grass or cultivated land lost, while bare land grew by about 34 square kilometers and rooftops and paved surfaces by about 11. The two vegetation classes are sometimes confused with each other, so the combined figure is the safer one.</p>
+<p class="fine">Read this carefully. "Exposed rock" includes natural outcrops and abandoned workings as well as active mines, so it indicates mining rather than measuring it. The authors had no on-the-ground checks of their map; a visual review of sample points put its accuracy at 85 to 90%. The area is mined for copper and cobalt, which go into batteries, vehicles, wiring and industry, not only phones.</p>
+<p class="fine">About the pictures: they are Landsat images, 30 meters per pixel, so large pits, ponds and tailings show but small artisanal workings do not. They come from two satellites and from different dates (22 May 2009, 21 June 2014, 3 June 2019, 10 July 2021), so colors differ with the season: the land tends to look greener earlier in the dry season and browner later, which is why 2019 can look greener than 2014. Judge the change by the pits, ponds, tailings and bare ground, and use the measured figures above for how much exposed rock grew. We applied no color adjustment beyond the standard stretch from the U.S. Geological Survey. The study itself used sharper commercial images.</p>
+<p class="fine">Source: Brown, Boyd and Kara, Sustainability (2022), open access. See <a href="sources.html#sa-01">sources</a>.</p>
+</div></section>
+
+<section class="scrim" data-cam="kivus" id="kivus"><div class="panel">
+<h2>In the east: coltan and an armed group.</h2>
+<p>Global Witness reports that the Rubaya mines, which it says (citing a UN source) produce about 15% of the world's tantalum, have been held by the armed group M23 since April 2024. Its June 2026 investigation says at least five of the seven largest Rwandan coltan exporters bought coltan from Rubaya, and that this coltan may have reached the supply chains of well-known technology, car and telecom companies. The traceability scheme ITSCI and the industry group RMI dispute its conclusions: ITSCI says the report identifies no specific shipments or transactions, and RMI says it relies on isolated trade data points. Global Witness also notes that tantalum capacitors are used in high-performance computing, including AI infrastructure, and warns that rising demand could increase the incentive to seize and launder coltan. That is a risk, not proof that any AI chip contains conflict coltan. Researchers cited by Ethical Consumer note that minerals fund and sustain the violence, but its roots go deeper.</p>
+<p class="chip">Sources: Global Witness, 10 June 2026 and 21 September 2026 (findings attributed to Global Witness); responses from ITSCI (12 June 2026) and RMI (10 June 2026); Ethical Consumer (context). Pin location is approximate.</p></div></section>
+
+<section class="solid" id="people"><div class="wide" style="max-width:46rem">
+<h2>What the evidence shows about the people</h2>
+<p>Each card shows what was measured, who and when, the result, and the limits. Most figures are several years old, so we show the year every time.</p>
+
+<details id="health-study"><summary>Kolwezi health study (2018)</summary><dl>
+<dt>Measured</dt><dd>Cobalt in the blood and urine of residents.</dd>
+<dt>Who and when</dt><dd>People living in an artisanal mining neighborhood in Kolwezi, compared with a control area. Press reports give 72 residents, including 32 children. 2018.</dd>
+<dt>Result</dt><dd>Much higher cobalt levels near the mines, largest in children, who also showed evidence of oxidative DNA damage.</dd>
+<dt>Limits</dt><dd>Small sample from one neighborhood. Long-term health effects are unclear.</dd>
+<dt>Source</dt><dd><a href="https://www.nature.com/articles/s41893-018-0139-4">Banza Lubaba Nkulu et al., Nature Sustainability (2018)</a></dd>
+<dt>Confidence</dt><dd>High for what the study found.</dd></dl></details>
+
+<details id="pay-and-deaths"><summary>Children's pay and miner deaths (Amnesty, 2015)</summary><dl>
+<dt>Measured</dt><dd>Interviews with artisanal miners, including children, in southern DRC.</dd>
+<dt>Who and when</dt><dd>Amnesty International interviews in 2015; deaths counted from September 2014 to December 2015.</dd>
+<dt>Result</dt><dd>Children reported earning about $1 to $2 a day. At least 80 miners died in underground collapses and accidents.</dd>
+<dt>Limits</dt><dd>Dated. The death count may be an undercount. This is children's pay only; adult earnings are in the 2022 survey card below.</dd>
+<dt>Source</dt><dd><a href="https://www.amnesty.org/en/latest/campaigns/2016/06/drc-cobalt-child-labour/">Amnesty International (2016)</a></dd>
+<dt>Confidence</dt><dd>Medium.</dd></dl></details>
+
+<details id="children-estimate"><summary>How many children? (UNICEF, 2014)</summary><dl>
+<dt>Measured</dt><dd>Estimated number of children working in mines.</dd>
+<dt>Who and when</dt><dd>UNICEF estimate for southern DRC, 2014, cited by Amnesty. A 2023 PNAS review of site studies gives 35,000 for 2017. The US Department of Labor's 2021 report gives a range for children working as artisanal cobalt miners.</dd>
+<dt>Result</dt><dd>About 40,000 children (UNICEF, 2014); about 35,000 (2017); between 5,000 and 35,000 as artisanal cobalt miners (US Department of Labor, 2021).</dd>
+<dt>Limits</dt><dd>The estimates count different things: UNICEF counts children in mining across southern DRC, the Labor Department counts artisanal cobalt miners. We found no reliable current count.</dd>
+<dt>Source</dt><dd><a href="https://www.amnesty.org/en/latest/campaigns/2016/06/drc-cobalt-child-labour/">Amnesty International</a>; <a href="https://www.pnas.org/doi/10.1073/pnas.2212037120">PNAS (2023)</a>; <a href="https://www.dol.gov/sites/dolgov/files/ILAB/child_labor_reports/tda2021/Congo-Democratic-Republic-of-the.pdf">US Department of Labor (2021)</a></dd>
+<dt>Confidence</dt><dd>Medium.</dd></dl></details>
+
+<details id="industrial-wages"><summary>Pay at large industrial mines (2025)</summary><dl>
+<dt>Measured</dt><dd>Worker interviews compared with a calculated living wage.</dd>
+<dt>Who and when</dt><dd>More than 30 workers at six mines in Kolwezi, early 2025, by RAID and CAJJ.</dd>
+<dt>Result</dt><dd>Many were paid below a living wage of USD 520 a month.</dd>
+<dt>Limits</dt><dd>Small interview sample. It shows low pay is not only an artisanal problem.</dd>
+<dt>Source</dt><dd><a href="https://raid-uk.org/drc-kolwezi-living-wage-mine-workers-rights-2025/">RAID and CAJJ (2025)</a></dd>
+<dt>Confidence</dt><dd>Medium.</dd></dl></details>
+
+<details id="pledge"><summary>Did the DRC keep its 2025 child labor pledge?</summary><dl>
+<dt>Measured</dt><dd>What the government promised, and what independent assessments found.</dd>
+<dt>Who and when</dt><dd>In August 2017 the government announced a national strategy and a commitment to end child labor in mining by 2025, the first time it acknowledged that children work in artisanal cobalt mines. The US Department of Labor assessed progress in its 2024 report. The International Labour Organization says the government set up a commission, CISTEMA, to coordinate action.</dd>
+<dt>Result</dt><dd>We found no evidence that child labor in mining was eliminated by 2025. The US Department of Labor reports that the government extended its strategy from 2025 to 2030 because child labor in mining remained a problem, and rated the DRC's 2024 progress as "minimal advancement." It noted no complaint mechanism, no unannounced labor inspections, and no published enforcement data. A 2022 Labor Department survey found that about two-thirds of artisanal-site workers and a quarter of industrial-site workers said children work at their worksite.</dd>
+<dt>Limits</dt><dd>The Labor Department does not say when the extension was decided, and we have not found the Congolese government's own document. The survey answers are workers' reports, not a count of children. Nothing here covers the period after 2024.</dd>
+<dt>Source</dt><dd><a href="https://www.amnesty.org/en/latest/news/2017/09/democratic-republic-of-congo-government-must-deliver-on-pledge-to-end-child-mining-labour-by-2025/">Amnesty International (2017)</a>; <a href="https://www.dol.gov/sites/dolgov/files/ILAB/child_labor_reports/tda2024/Congo-Democratic-Republic-of-DRC.pdf">US Department of Labor (2024)</a>; <a href="https://www.dol.gov/sites/dolgov/files/ILAB/DRC-FL-Cobalt-Report-508.pdf">US Department of Labor survey (2023)</a>; <a href="https://www.ilo.org/resource/news/tiny-mighty-voices-against-child-labour-cobalt-mining">ILO (2023)</a></dd>
+<dt>Confidence</dt><dd>Medium to high.</dd></dl></details>
+
+<details id="worker-survey"><summary>What cobalt workers earn and endure (US Labor Department survey, 2022)</summary><dl>
+<dt>Measured</dt><dd>Earnings, hazards, forced labor indicators and children at worksites, reported by adult cobalt workers.</dd>
+<dt>Who and when</dt><dd>946 adult cobalt workers near mines in Haut-Katanga and Lualaba, interviewed 6 to 22 August 2022. Published May 2023.</dd>
+<dt>Result</dt><dd>Workers earned about $8 a day on average ($9 at artisanal sites, $6 at industrial sites), against a minimum wage of $3.50. Most were exposed to dust or fumes without proper protection (84%), and 63% had been hurt or sick because of the work. Among the 28% of workers employed by a mine operator, 78% experienced forced labor as the International Labour Organization defines it. The study estimates 67,000 to 80,000 workers in forced labor.</dd>
+<dt>Limits</dt><dd>Self-employed workers, most artisanal miners, were not assessed for forced labor, and only 48 employed artisanal workers were interviewed. The sample came from households near mines, found with help from community leaders. Earnings are self-reported.</dd>
+<dt>Source</dt><dd><a href="https://www.dol.gov/sites/dolgov/files/ILAB/DRC-FL-Cobalt-Report-508.pdf">US Department of Labor and ICF (2023)</a></dd>
+<dt>Confidence</dt><dd>High for what the survey found; medium for the forced labor estimate.</dd></dl></details>
+
+<p>Adult cobalt workers in the Labor Department survey earned about $8 a day, more than double the $3.50 minimum wage, and the aid group IMPACT reports that artisanal cobalt mining is the highest-paying work available to many families in the area. That is why we are not asking for a boycott of Congolese cobalt. We are asking for safer mining, fair pay, no child labor, and less overall demand.</p>
+</div></section>
+
+<section class="solid" id="act"><div class="wide" style="max-width:46rem">
+<h2>What you can do</h2>
+<h3>Push where the leverage is biggest</h3><p>Ask brands where their minerals come from. Support right-to-repair and supply-chain due diligence laws. Change what your workplace, school or congregation buys and how long it keeps devices.</p>
+<h3>Change your own habits</h3><p>Keep phones and laptops longer. Repair before replacing. Buy refurbished. Recycle old devices. Save heavy AI uses, such as video and long agent runs, for tasks that matter.</p>
+<h3>Back Congolese voices</h3>
+<p>These groups are based in the DRC and work with the communities this site is about. We included them because we could confirm that they exist and are active. We have not audited their finances, and we do not vouch for every claim any group makes. Before you give, read their own reports.</p>
+<ul class="orgs">
+<li><strong><a href="https://www.afrewatch.org">AFREWATCH (African Resources Watch)</a></strong>, Lubumbashi. A DRC-based organization founded in 2013 and headquartered in Lubumbashi. It works to promote good governance of natural resources, including mining, oil and gas, water, and forests, and uses research, training, strategic litigation, and advocacy to hold governments and companies accountable for how they manage them. In 2025 it called on the authorities to address deadly rockfalls at artisanal mining sites near Kolwezi and to respond to acidic water contamination that destroyed homes near a mining operation. In 2024 it co-authored the report <em>Beneath the Green</em> on industrial cobalt mining in the DRC with the UK-based organization RAID. <em>How to help:</em> AFREWATCH says it welcomes support in many ways, including donations. Its website has more information; we have not confirmed a donation page. <span class="fine">Description approved by AFREWATCH, 9 November 2026.</span></li>
+<li><strong><a href="https://congo.gsif.it/">Bon Pasteur Kolwezi</a></strong>, Kolwezi. A Congolese nonprofit founded in 2012 by the Good Shepherd sisters, working on child protection, schooling, women's empowerment and alternative livelihoods in artisanal mining communities. In 2019 it opened a center for about 1,000 children. <em>How to help:</em> it works with the Rome-based Good Shepherd International Foundation, which takes donations on its Congo page. Projects it takes part in have been funded by the European Union and, for the children's center, by a mining company, ERG.</li>
+</ul>
+<p>To read Congolese researchers directly, start with <a href="https://lens.civicus.org/interview/international-demand-for-coltan-is-linked-to-violence-in-the-drc/">a 2025 interview with Claude Iguma</a>, a mining governance researcher in Bukavu, on coltan and violence in eastern DRC.</p>
+<p class="fine">We are still verifying groups that work in eastern DRC. We will not name a group there until we are sure it is safe for it to be named.</p>
+</div></section>
+
+<section class="solid" id="method"><div class="wide" style="max-width:46rem">
+<h2>How we check facts</h2>
+<p>Every figure here is listed in our public sources, with where it came from, how sure we are, and when we last checked. Figures we worked out ourselves are labeled as estimates. Findings by advocacy groups are attributed to them. If we get something wrong, we will correct it in public. Read the <a href="sources.html">full list of sources</a> and our <a href="corrections.html">corrections page</a>.</p>
+</div></section>
+
+<script src="vendor/d3.min.js"></script><script src="vendor/topojson-client.min.js"></script><script src="data/world.js"></script><script src="app.js"></script><script src="backpack.js"></script><script src="kolwezi.js"></script><script src="nav.js"></script>
+</body></html>
